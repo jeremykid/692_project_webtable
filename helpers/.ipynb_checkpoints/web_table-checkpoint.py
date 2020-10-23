@@ -2,6 +2,7 @@ import os
 import sys
 import subprocess
 import urllib.request
+import pandas as pd
 
 def extractor(site):
     '''Extract tables from a single or a list of urls or html filenames passed.'''
@@ -14,14 +15,14 @@ def extractor(site):
         fname = site
         site = 'http://'+site
 
-    print('Extracting tables from: ' + site)
+#     print('Extracting tables from: ' + site)
+    
 
     try:
         req=urllib.request.Request(site, headers=header)
         content = urllib.request.urlopen(req).read()
         df1= pd.read_html(content)
+        return df1, ''
     except Exception as e:
         df1=[]
-        print(e)
-
-    return df1
+        return df1, e
