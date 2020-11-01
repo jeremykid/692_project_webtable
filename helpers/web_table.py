@@ -11,7 +11,7 @@ def extractor(site):
       "X-Requested-With": "XMLHttpRequest"}
     
     try:
-        with timeout(5, exception=RuntimeError):
+        with timeout(120, exception=RuntimeError):
             if len(site.split('//'))>1:
                 fname = site.split('//')[1]
             else:
