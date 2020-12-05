@@ -5,7 +5,7 @@ import seaborn as sns
 import numpy as np
 import pandas as pd
 
-def result_summary(y_test, predicted, predicted_prob):
+def result_summary(y_test, predicted, predicted_prob, file_name = ''):
 
     classes = np.unique(y_test)
     y_test_array = pd.get_dummies(y_test, drop_first=False).values
@@ -27,7 +27,7 @@ def result_summary(y_test, predicted, predicted_prob):
            yticklabels=classes, title="Confusion matrix")
     plt.yticks(rotation=0)
 
-    plt.savefig('confusion_matrix.png')
+    plt.savefig(file_name+'confusion_matrix.png')
 
     fig, ax = plt.subplots(nrows=1, ncols=2)
     ## Plot roc
@@ -59,4 +59,4 @@ def result_summary(y_test, predicted, predicted_prob):
     ax[1].legend(loc="best")
     ax[1].grid(True)
     # plt.show()
-    plt.savefig('auc.png')
+    plt.savefig(file_name+'auc.png')
