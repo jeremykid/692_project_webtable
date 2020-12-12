@@ -60,3 +60,5 @@ def result_summary(y_test, predicted, predicted_prob, file_name = ''):
     ax[1].grid(True)
     # plt.show()
     plt.savefig(file_name+'auc.png')
+    
+    return metrics.classification_report(y_test, predicted)

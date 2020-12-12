@@ -1,0 +1,77 @@
+Base line corase
+
+Accuracy: 0.63
+Auc: 0.82
+Detail:
+              precision    recall  f1-score   support
+
+        arts       0.65      0.71      0.68       100
+       games       0.40      0.14      0.21        14
+     science       0.57      0.41      0.47        64
+     society       0.56      0.71      0.63        80
+      sports       0.71      0.69      0.70       101
+
+    accuracy                           0.63       359
+   macro avg       0.58      0.53      0.54       359
+weighted avg       0.62      0.63      0.62       359
+
+GradientBoosting corase
+
+Accuracy: 0.84
+Auc: 0.96
+Detail:
+              precision    recall  f1-score   support
+
+        arts       0.98      0.88      0.93       100
+       games       0.78      0.50      0.61        14
+     science       0.65      0.86      0.74        64
+     society       0.88      0.88      0.88        80
+      sports       0.86      0.82      0.84       101
+
+    accuracy                           0.84       359
+   macro avg       0.83      0.79      0.80       359
+weighted avg       0.86      0.84      0.85       359
+
+Base line fine
+
+Accuracy: 0.53
+Auc: 0.81
+Detail:
+              precision    recall  f1-score   support
+
+  basketball       0.33      0.09      0.14        11
+    football       0.22      0.17      0.19        12
+       games       0.33      0.09      0.14        11
+       movie       0.17      0.14      0.15        21
+       music       0.67      0.74      0.70        76
+other sports       0.46      0.34      0.39        32
+      racing       0.62      0.42      0.50        12
+     science       0.55      0.56      0.55        63
+      soccer       0.30      0.38      0.34        26
+     society       0.58      0.70      0.64        87
+
+    accuracy                           0.53       351
+   macro avg       0.42      0.36      0.37       351
+weighted avg       0.51      0.53      0.51       351
+
+GradientBoosting fine
+
+Accuracy: 0.76
+Auc: 0.93
+Detail:
+              precision    recall  f1-score   support
+
+  basketball       1.00      0.27      0.43        11
+    football       0.50      0.33      0.40        12
+       games       0.54      0.64      0.58        11
+       movie       0.79      0.71      0.75        21
+       music       1.00      0.88      0.94        76
+other sports       0.77      0.53      0.63        32
+      racing       0.69      0.75      0.72        12
+     science       0.58      0.87      0.70        63
+      soccer       0.71      0.77      0.74        26
+     society       0.86      0.82      0.84        87
+
+    accuracy                           0.76       351
+   macro avg       0.74      0.66      0.67       351
+weighted avg       0.79      0.76      0.76       351
