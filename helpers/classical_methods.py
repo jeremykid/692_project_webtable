@@ -136,4 +136,4 @@ if __name__ == '__main__':
     with open(dataframe_path, 'rb') as handle:
         dtf = pickle.load(handle)
     
-    webtable_classify(, VECTORIZATION, CLASSIFIER)
+    webtable_classify(dtf, VECTORIZATION, CLASSIFIER)
